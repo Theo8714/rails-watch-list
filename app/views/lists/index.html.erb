@@ -1,0 +1,27 @@
+
+<div class="container text-center">
+  <h1>Your Movie Lists</h1>
+  <p>Cliquez sur la liste de votre choix pour voir les détails.</p>
+</div>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <hr>
+      <ul class="list-unstyled">
+        <% @lists.each do |list| %>
+          <li>
+            <img src="https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNpbmVtYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="image" class="list-image">
+            <i class="fas fa-list-ul"></i>
+            <%= link_to list.name, list_path(list), class: 'list-link' %>
+          </li>
+        <% end %>
+      </ul>
+      <hr>
+    </div>
+  </div>
+</div>
+
+<div class="container text-center mt-3">
+  <%= link_to 'Add Lists', new_list_path, class: 'btn btn-primary' %>
+</div>

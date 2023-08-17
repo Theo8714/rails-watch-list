@@ -1,0 +1,8 @@
+<p>Clique sur le film de ton choix pour voir le détails.</p>
+<p>----------------------------------------------------------</p>
+<ul>
+  <% @movies.each do |movie|%>
+  <li><%= link_to movie.title, movie_path(movie) %></li>
+  <%end%>
+</ul>
+<p>----------------------------------------------------------</p>

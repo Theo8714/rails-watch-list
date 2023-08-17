@@ -1,0 +1,19 @@
+.list-link {
+  font-size: 1.2rem;
+  color: #333;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+.list-link:hover {
+  text-decoration: underline;
+}
+.list-title {
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+.list-image {
+  max-width: 50px;
+  max-height: 50px;
+  margin-right: 10px;
+}
